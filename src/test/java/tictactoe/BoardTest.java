@@ -7,12 +7,7 @@ import org.junit.Test;
 import static tictactoe.MARK.*;
 
 public class BoardTest {
-  private Board board;
-
-  @Before
-  public void setup() {
-    board = new Board();
-  }
+  private Board board = new Board();
 
   @Test
   public void shouldCreateEmptyBoard() {
