@@ -1,4 +1,4 @@
-package optional;
+package optional.discount;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package optional;
+package optional.discount;
 
 public class Discount {
   private String name;
