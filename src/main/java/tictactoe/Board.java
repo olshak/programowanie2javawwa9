@@ -1,7 +1,14 @@
 package tictactoe;
 
+import java.util.List;
+
 public class Board {
+  private static int SIZE = 3;
   private MARK[][] board = new MARK[3][3];
+
+  public int getSize() {
+    return SIZE;
+  }
 
   public boolean isEmpty() {
     for (int i = 0; i < board.length; i++) {
@@ -24,6 +31,10 @@ public class Board {
   public MARK getValue(int x, int y) {
     verifyIndexes(x, y);
     return board[x][y];
+  }
+
+  public MARK getValue(int fieldNumber) {
+    return getValue(fieldNumber/3, fieldNumber%3);
   }
 
   private void verifyIndexes(int x, int y) {
